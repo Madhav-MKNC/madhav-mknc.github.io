@@ -2,6 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #121216;
+    color: white;
 }
 
 header {
@@ -9,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #0a0a0a;
+    background-color: #0b0a10;
 }
 
 header .logo img {
@@ -20,15 +22,21 @@ header nav ul {
     list-style: none;
     display: flex;
     margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
     margin-left: 15px;
 }
 
-header nav ul li a img {
-    height: 24px;
-    width: 24px;
+header nav ul li a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #007BFF;
 }
 
 .container {
