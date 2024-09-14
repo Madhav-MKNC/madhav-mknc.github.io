@@ -1,0 +1,162 @@
+/* Base Styles */
+body {
+        margin: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #0a0a0a;
+        color: #e0e0e0;
+}
+
+a {
+        color: #00e6b8;
+        text-decoration: none;
+}
+
+a:hover {
+        text-decoration: underline;
+}
+
+/* Header */
+header {
+        background-color: #0a0a0a;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        padding: 20px 0;
+}
+
+header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        text-align: center;
+}
+
+nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 0 0;
+        margin: 0;
+}
+
+nav li {
+        margin: 0 20px;
+}
+
+nav a {
+        font-weight: bold;
+        color: #e0e0e0;
+}
+
+nav a:hover {
+        color: #00e6b8;
+}
+
+/* Intro Section */
+#intro {
+        height: 100vh;
+        background: url('hero.jpg') no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+}
+
+#intro h2 {
+        font-size: 3em;
+        color: #fff;
+        text-shadow: 0 0 20px #000;
+}
+
+/* Sections */
+section {
+        padding: 100px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+}
+
+section h2 {
+        font-size: 2.5em;
+        margin-bottom: 50px;
+        position: relative;
+        display: inline-block;
+}
+
+section h2::after {
+        content: '';
+        width: 50px;
+        height: 3px;
+        background: #00e6b8;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+}
+
+section p {
+        font-size: 1.2em;
+        line-height: 1.6;
+}
+
+/* Work & Writing Lists */
+section ul {
+        list-style: none;
+        padding: 0;
+}
+
+section li {
+        margin-bottom: 40px;
+}
+
+section li a {
+        font-size: 1.5em;
+        font-weight: bold;
+}
+
+section li p {
+        margin-top: 10px;
+        font-size: 1em;
+        color: #aaa;
+}
+
+/* Socials */
+#socials ul {
+        display: flex;
+        justify-content: center;
+}
+
+#socials li {
+        margin: 0 15px;
+}
+
+#socials a {
+        font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+        background-color: #0a0a0a;
+        padding: 20px;
+        text-align: center;
+        color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+        nav ul {
+                flex-direction: column;
+        }
+
+        nav li {
+                margin: 10px 0;
+        }
+
+        #intro h2 {
+                font-size: 2em;
+        }
+
+        section h2 {
+                font-size: 2em;
+        }
+}
