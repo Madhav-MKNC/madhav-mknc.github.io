@@ -98,7 +98,6 @@ header nav ul li {
     position: absolute;
     top: 10%;
     width: calc(50% - 180px);
-    /* width: 140px;  */
     border-top: 1em solid rgb(255, 168, 212);
 }
 
@@ -132,6 +131,7 @@ header nav ul li {
 }
 
 /* line between posts */
+.blog-full,
 .blog-previews {
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
@@ -144,7 +144,6 @@ header nav ul li {
 header nav ul li a,
 .logo a,
 .sidebar a {
-    /* color: rgb(247, 159, 255); */
     color: rgb(255, 146, 200);
     text-decoration: none;
 }

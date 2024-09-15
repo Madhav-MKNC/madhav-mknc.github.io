@@ -1,39 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const contentElement = document.getElementById('blog-full');
+
     function loadBlogFromHash() {
         const hash = window.location.hash;
+
         if (hash.startsWith('#blog-')) {
-            const blogId = hash.replace('#blog-', ''); // Extract blog number (e.g., "3" from "#blog-3")
+            const blogId = hash.replace('#blog-', '');
             if (!isNaN(blogId) && Number.isInteger(Number(blogId))) {
-                displayBlogContent(blogId); // Load the content if it's a valid integer
+                loadMarkdownFile(blogId);
             }
         }
     }
 
-    async function displayBlogContent(blogId) {
+    async function loadMarkdownFile(blogId) {
         try {
-            const blogModule = await import(`./blogs/${blogId}/blog.js`)
-            const blogContent = blogModule.blogContent;
-            if (blogContent) { contentElement.innerHTML = marked.parse(blogContent); }
-            else { contentElement.innerHTML = '<p>No content available for this blog.</p>'; }
+            const response = await fetch(`./blogs/${blogId}/blog.md`);
+            if (!response.ok) {
+                throw new Error(`Error fetching blog${blogId}.md`);
+            }
+
+            const markdownContent = await response.text();
+            contentElement.innerHTML = marked.parse(markdownContent);
         } catch (error) {
             contentElement.innerHTML = '<p>Error loading the blog content.</p>';
             console.error('Error loading blog content:', error);
         }
     }
-
-
-    // function loadBlogContent(blogId) {
-    //     const script = document.createElement('script');
-    //     script.src = `blogs/${blogId}/blog.js`; // e.g., loads blogs/3/blog.js for #blog-3
-    //     document.body.appendChild(script);
-
-
-    //     // Get the output div where the rendered HTML will be displayed
-    //     const markdownOutput = document.getElementById('main-content');
-
-    //     // Render the Markdown content to HTML using marked.parse()
-    //     markdownOutput.innerHTML = marked.parse(markdownContent);
-    // }
 
     loadBlogFromHash();
     window.addEventListener('hashchange', loadBlogFromHash);
