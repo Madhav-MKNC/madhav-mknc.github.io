@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
             contentElement = document.createElement('div');
             contentElement.className = 'blog-full';
             contentElement.id = 'blog-full';
-            const blogSContainer = document.getElementById('blog-section');
-            blogSContainer.appendChild(contentElement);
-            return contentElement;
         }
+        const blogSContainer = document.getElementById('blog-section');
+        blogSContainer.appendChild(contentElement);
+        return contentElement;
     }
 
     function loadBlogFromHash() {

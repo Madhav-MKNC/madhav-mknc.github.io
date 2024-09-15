@@ -121,6 +121,11 @@ header nav ul li {
     margin-top: 20px;
 }
 
+.blog-section .empty-blog-placeholder {
+    text-align: center;
+    font-size: 2em;
+}
+
 .widget {
     margin-top: 20px;
 }
