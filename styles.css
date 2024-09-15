@@ -23,6 +23,7 @@ header {
     align-items: center;
     padding-inline: 50px;
     background-color: #0b0a10;
+    border-radius: 20px;
 }
 
 header nav ul {
@@ -30,20 +31,11 @@ header nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    font-size: 2em;
 }
 
 header nav ul li {
     margin-left: 30px;
-}
-
-header nav ul li a {
-    color: #fff;
-    font-size: 1.5em;
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    color: #007BFF;
 }
 
 .container {
@@ -62,38 +54,34 @@ header nav ul li a:hover {
 }
 
 .sidebar .left-sidebar-section {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .profile {
     margin-top: 20px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .profile-img {
-    max-width: 100%; 
+    width: 100%;
     height: auto;
-    border-radius: 20%;
+    border-radius: 10px;
 }
 
 .sidebar h2 {
     font-size: 1.5em;
+    color: rgb(255, 232, 158);
 }
 
 .sidebar p {
-    color: rgb(225, 223, 255);
+    color: rgb(255, 249, 232);
 }
 
 .main-content {
     margin-inline: 40px;
     width: 80%;
     padding: 20px;
-}
-
-.main-content .intro,
-.main-content .blog-previews {
-    margin-bottom: 50px;
-    color: rgb(251, 234, 253);
 }
 
 .main-content .intro,
@@ -122,30 +110,34 @@ header nav ul li a:hover {
     font-size: 0.9em;
 }
 
-/* .blog-previews .blog-post img {
+.blog-previews .blog-post img {
     width: 100%;
     height: auto;
-} */
+}
 
 .blog-previews .blog-post .read-more {
     color: #00ffff;
     text-decoration: none;
 }
 
-.blog-previews .blog-post .read-more:hover {
-    /* text-decoration: underline; */
-    color: pink;
-    text-shadow: 0px 0px 4px red;
-}
-
 .widget {
     margin-top: 20px;
 }
 
-a {
-    color: rgb(163, 146, 255);
+header nav ul li a,
+.logo a,
+.sidebar .hot a {
+    /* color: rgb(163, 146, 255); */
+    color: rgb(101, 183, 255);
     text-decoration: none;
-    text-shadow: 0 0 1px rgb(255, 255, 255);
+}
+
+.blog-previews .blog-post .read-more:hover,
+header nav ul li a:hover,
+.logo a:hover,
+.sidebar .hot a:hover {
+    color: pink;
+    text-shadow: 0px 0px 4px red;
 }
 
 /* Responsive Design */

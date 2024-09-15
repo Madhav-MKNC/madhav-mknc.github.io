@@ -1,3 +1,3 @@
-# portfolio 
+# portfolio
 
-Source code for my portfolio hosted <a href="https://madhav-mknc.github.io/portfolio">here</p>
+[Visit my website](https://madhav-mknc.github.io/)

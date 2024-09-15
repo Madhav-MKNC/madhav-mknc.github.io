@@ -1,28 +1,28 @@
 // Array of blog post data
 const blogPosts = [
     {
-        title: "Blog Title One",
-        date: "January 1, 2024",
-        author: "Published by You",
-        imageSrc: "blog1.jpg",
+        title: "Are We Heading Towards a Dystopian or Utopian Future?",
+        date: "Feb 17, 2024",
+        author: "Published by Madhav Kumar",
+        imageSrc: "blogs/1/thumbnail.png",
         desc: "This is the description for blog post one.",
-        link: "blogs/blog1.html"
+        link: "blogs/1/index.html"
     },
     {
-        title: "Blog Title Two",
-        date: "February 10, 2024",
-        author: "Published by Author",
-        imageSrc: "blog2.jpg",
+        title: "The Future Redefined: Imagine a World Beyond Jobs",
+        date: "May 26, 2024",
+        author: "Published by Madhav Kumar",
+        imageSrc: "blogs/2/thumbnail.png",
         desc: "This is the description for blog post two.",
-        link: "blogs/blog2.html"
+        link: "blogs/2/index.html"
     },
     {
         title: "Blog Title Three",
         date: "March 15, 2024",
         author: "Published by Someone Else",
-        imageSrc: "blog3.jpg",
+        imageSrc: "blogs/3/thumbnail.png",
         desc: "This is the description for blog post three.",
-        link: "blogs/blog3.html"
+        link: "blogs/3/index.html"
     }
 ];
 
