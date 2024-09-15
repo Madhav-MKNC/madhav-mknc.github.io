@@ -84,9 +84,8 @@ header nav ul li {
 }
 
 .main-content {
-    margin-inline: 40px;
-    width: 80%;
-    padding: 20px;
+    margin-inline: 80px;
+    width: 75%;
 }
 
 .main-content .intro {
