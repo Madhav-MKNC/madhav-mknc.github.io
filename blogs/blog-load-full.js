@@ -5,16 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
             contentElement = document.createElement('div');
             contentElement.className = 'blog-full';
             contentElement.id = 'blog-full';
-
-            const blogSContainer = document.getElementById('blog-section');
-            blogSContainer.appendChild(contentElement);
-            return contentElement;
         }
+        const blogSContainer = document.getElementById('blog-section');
+        blogSContainer.appendChild(contentElement);
+        return contentElement;
     }
 
     function loadBlogFromHash() {
         const hash = window.location.hash;
-
         if (hash.startsWith('#blog-')) {
             const blogId = hash.replace('#blog-', '');
             if (!isNaN(blogId) && Number.isInteger(Number(blogId))) {
@@ -25,12 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     async function loadMarkdownFile(blogId) {
         try {
-            const response = await fetch(`./blogs/${blogId}/blog.md`);
-            if (!response.ok) {
-                throw new Error(`Error fetching blog${blogId}.md`);
-            }
-
             let contentElement = BlogDiv();
+            contentElement.href = `#blog-${blogId}`
+            const response = await fetch(`./blogs/${blogId}/blog.md`);
+            if (!response.ok) { throw new Error(`Error fetching blog${blogId}.md`); }
             const markdownContent = await response.text();
             contentElement.innerHTML = marked.parse(markdownContent);
         } catch (error) {
