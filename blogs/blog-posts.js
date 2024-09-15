@@ -57,7 +57,7 @@ function createBlogPost(post) {
     const readMore = document.createElement('a');
     readMore.href = post.link;
     readMore.className = 'read-more';
-    readMore.textContent = 'Read More';
+    readMore.textContent = 'Continue Reading...';
 
     // Append all elements to the article
     article.appendChild(titleLink);

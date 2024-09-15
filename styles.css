@@ -92,6 +92,25 @@ header nav ul li {
     text-align: center;
     font-size: large;
     color: rgb(255, 168, 212);
+    position: relative;
+
+}
+
+.main-content .intro h1::before, .intro h1::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    width: calc(50% - 180px);
+    /* width: 140px;  */
+    border-top: 1em solid rgb(255, 168, 212);
+}
+
+.main-content .intro h1::before {
+    left: 0;
+}
+
+.main-content .intro h1::after {
+    right: 0;
 }
 
 .blog-previews .blog-post-title {
