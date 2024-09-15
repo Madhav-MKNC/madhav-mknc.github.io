@@ -58,6 +58,29 @@ header nav ul li a:hover {
     max-width: 40%;
     padding: 20px;
     background-color: #504572;
+    text-align: justify;
+}
+
+.sidebar .left-sidebar-section {
+    padding-bottom: 10px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 20%;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+}
+
+.sidebar p {
+    color: rgb(225, 223, 255);
 }
 
 .main-content {
@@ -69,6 +92,18 @@ header nav ul li a:hover {
 .main-content .intro,
 .main-content .blog-previews {
     margin-bottom: 50px;
+    color: rgb(251, 234, 253);
+}
+
+.main-content .intro,
+.main-content .blog-previews h1 {
+    font-size: larger;
+    color: rgb(190, 182, 191);
+}
+
+.main-content .intro,
+.main-content .blog-previews p {
+    color: rgb(252, 228, 255);
 }
 
 .blog-previews .blog-post {
@@ -76,8 +111,13 @@ header nav ul li a:hover {
     padding-bottom: 20px;
 }
 
+.blog-previews .blog-post .blog-post-title {
+    font-size: 2.5em;
+    margin-bottom: 0px;
+}
+
 .blog-previews .blog-post .meta {
-    color: #777;
+    color: #989898;
     font-size: 0.9em;
 }
 
@@ -99,6 +139,12 @@ header nav ul li a:hover {
 
 .widget {
     margin-top: 20px;
+}
+
+a {
+    color: rgb(163, 146, 255);
+    text-decoration: none;
+    text-shadow: 0 0 1px rgb(255, 255, 255);
 }
 
 /* Responsive Design */
