@@ -21,7 +21,6 @@ a {
 }
 
 header {
-    /* position: fixed; */
     margin-inline: 80px;
     display: flex;
     align-items: center;
@@ -29,9 +28,7 @@ header {
     /* background-color: #0b0a10; */
     border-radius: 10px;
     border: 1px solid rgb(255, 168, 212);
-    /* box-shadow: 0 0 5px rgb(255, 168, 212); */
     margin-top: 20px;
-    /* z-index: 1000; */
     justify-content: space-between;
 }
 
@@ -100,7 +97,8 @@ header nav ul li {
 
 }
 
-.main-content .intro h1::before, .intro h1::after {
+.main-content .intro h1::before,
+.intro h1::after {
     content: "";
     position: absolute;
     top: 10%;
@@ -139,7 +137,7 @@ header nav ul li {
 }
 
 /* line between posts */
-.blog-previews  {
+.blog-previews {
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
 }
