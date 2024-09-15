@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const contentElement = document.getElementById('blog-full');
+    function BlogDiv() {
+        let contentElement = document.getElementById('blog-full');
+        if (!contentElement) {
+            contentElement = document.createElement('div');
+            contentElement.className = 'blog-full';
+            contentElement.id = 'blog-full';
+
+            const blogSContainer = document.getElementById('blog-section');
+            blogSContainer.appendChild(contentElement);
+            return contentElement;
+        }
+    }
 
     function loadBlogFromHash() {
         const hash = window.location.hash;
@@ -19,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 throw new Error(`Error fetching blog${blogId}.md`);
             }
 
+            let contentElement = BlogDiv();
             const markdownContent = await response.text();
             contentElement.innerHTML = marked.parse(markdownContent);
         } catch (error) {

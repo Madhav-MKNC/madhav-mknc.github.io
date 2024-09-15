@@ -131,10 +131,20 @@ header nav ul li {
 }
 
 /* line between posts */
-.blog-full,
 .blog-previews {
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
+}
+
+.blog-section {
+    background-color: rgba(0, 0, 0, 0.167);
+    border-radius: 10px;
+    box-shadow: 0 0 1px white;
+    /* padding: 40px; */
+    padding-top: 10px;
+    padding-inline: 30px;
+    padding-bottom: 10px;
+    margin-top: 20px;
 }
 
 .widget {
