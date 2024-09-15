@@ -21,9 +21,9 @@ a {
 }
 
 header {
+    /* position: fixed; */
     margin-inline: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-inline: 30px;
     /* background-color: #0b0a10; */
@@ -31,6 +31,8 @@ header {
     border: 1px solid rgb(255, 168, 212);
     /* box-shadow: 0 0 5px rgb(255, 168, 212); */
     margin-top: 20px;
+    /* z-index: 1000; */
+    justify-content: space-between;
 }
 
 header nav ul {
