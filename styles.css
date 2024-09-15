@@ -16,6 +16,10 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     margin-inline: 80px;
     display: flex;
@@ -84,40 +88,37 @@ header nav ul li {
     padding: 20px;
 }
 
-.main-content .intro,
-.main-content .blog-previews h1 {
-    font-size: larger;
-    color: rgb(190, 182, 191);
+.main-content .intro {
+    text-align: center;
+    font-size: large;
+    color: rgb(255, 168, 212);
 }
 
-.main-content .intro,
-.main-content .blog-previews p {
-    color: rgb(252, 228, 255);
-}
-
-.blog-previews .blog-post {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
-}
-
-.blog-previews .blog-post .blog-post-title {
+.blog-previews .blog-post-title {
+    color: rgb(144, 246, 255);
     font-size: 2.5em;
     margin-bottom: 0px;
 }
 
-.blog-previews .blog-post .meta {
-    color: #989898;
+.blog-previews .meta {
+    color: #b0b0b0;
     font-size: 0.9em;
 }
 
-.blog-previews .blog-post img {
+.blog-previews img {
     width: 100%;
     height: auto;
 }
 
-.blog-previews .blog-post .read-more {
+.blog-previews .read-more {
     color: #00ffff;
     text-decoration: none;
+}
+
+/* line between posts */
+.blog-previews  {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
 }
 
 .widget {
@@ -126,18 +127,18 @@ header nav ul li {
 
 header nav ul li a,
 .logo a,
-.sidebar .hot a {
-    /* color: rgb(163, 146, 255); */
-    color: rgb(101, 183, 255);
+.sidebar a {
+    /* color: rgb(247, 159, 255); */
+    color: rgb(255, 146, 200);
     text-decoration: none;
 }
 
 .blog-previews .blog-post .read-more:hover,
 header nav ul li a:hover,
 .logo a:hover,
-.sidebar .hot a:hover {
-    color: pink;
-    text-shadow: 0px 0px 4px red;
+.sidebar a:hover {
+    color: rgb(0, 110, 255);
+    text-shadow: 0 0 4px red;
 }
 
 /* Responsive Design */
