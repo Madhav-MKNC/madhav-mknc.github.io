@@ -22,7 +22,7 @@ const blogPosts = [
         author: "Published by Madhav Kumar",
         imageSrc: "blogs/3/thumbnail.png",
         desc: "This is the description for blog post 3.",
-        link: "#blog-full"
+        link: "#blog-3"
     },
     {
         title: "Blog Title 4",
@@ -30,7 +30,7 @@ const blogPosts = [
         author: "Published by Madhav Kumar",
         imageSrc: "blogs/4/thumbnail.png",
         desc: "This is the description for blog post 4.",
-        link: "#blog-full"
+        link: "#blog-4"
     }
 ];
 
