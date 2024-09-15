@@ -25,9 +25,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 50px;
-    background-color: #0b0a10;
-    border-radius: 20px;
+    padding-inline: 30px;
+    /* background-color: #0b0a10; */
+    border-radius: 10px;
+    border: 1px solid rgb(255, 168, 212);
+    /* box-shadow: 0 0 5px rgb(255, 168, 212); */
+    margin-top: 20px;
 }
 
 header nav ul {
@@ -52,7 +55,6 @@ header nav ul li {
 .sidebar {
     width: 40%;
     max-width: 40%;
-    padding: 20px;
     /* background-color: #504572; */
     text-align: justify;
 }
@@ -75,11 +77,11 @@ header nav ul li {
 
 .sidebar h2 {
     font-size: 1.5em;
-    color: rgb(255, 232, 158);
+    color: rgb(255, 216, 89);
 }
 
 .sidebar p {
-    color: rgb(255, 249, 232);
+    color: rgba(255, 232, 168, 0.89);
 }
 
 .main-content {
