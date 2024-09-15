@@ -16,14 +16,22 @@ const blogPosts = [
         desc: "Is a future without jobs possible? As AI advances, our idea of work is changing fast. Instead of fearing job loss, what if we see it as a chance for a new beginning? Explore how technology might reshape our world, challenging the very idea of work as we know it.",
         link: "https://madhav-mknc.medium.com/the-future-redefined-imagine-a-world-beyond-jobs-330a42b41c54"
     },
-    // {
-    //     title: "Blog Title Three",
-    //     date: "March 15, 2024",
-    //     author: "Published by Someone Else",
-    //     imageSrc: "blogs/3/thumbnail.png",
-    //     desc: "This is the description for blog post three.",
-    //     link: "blogs/3/index.html"
-    // }
+    {
+        title: "Blog Title 3",
+        date: "Sept 17, 2024",
+        author: "Published by Madhav Kumar",
+        imageSrc: "blogs/3/thumbnail.png",
+        desc: "This is the description for blog post 3.",
+        link: "#blog-full"
+    },
+    {
+        title: "Blog Title 4",
+        date: "Sept 18, 2024",
+        author: "Published by Madhav Kumar",
+        imageSrc: "blogs/4/thumbnail.png",
+        desc: "This is the description for blog post 4.",
+        link: "#blog-full"
+    }
 ];
 
 // Function to create a blog post element
