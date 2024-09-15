@@ -9,10 +9,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 body {
-    /* margin: 10px; */
+    margin-inline: 100px;
     font-family: 'Proto Mono', Arial, sans-serif;
-    background-color: #121216;
-    /* background-color: rgb(36, 0, 82); */
+    background: linear-gradient(rgb(24, 12, 22), #0a0a1f);
     color: white;
 }
 
@@ -21,11 +20,10 @@ a {
 }
 
 header {
-    margin-inline: 80px;
     display: flex;
     align-items: center;
     padding-inline: 30px;
-    /* background-color: #0b0a10; */
+    background-color: #0b0a1090;
     border-radius: 10px;
     border: 1px solid rgb(255, 168, 212);
     margin-top: 20px;
@@ -45,7 +43,6 @@ header nav ul li {
 }
 
 .container {
-    margin-inline: 80px;
     margin-top: 10px;
     display: flex;
     margin-bottom: 20px;
@@ -54,7 +51,6 @@ header nav ul li {
 .sidebar {
     width: 40%;
     max-width: 40%;
-    /* background-color: #504572; */
     text-align: justify;
 }
 
@@ -102,7 +98,6 @@ header nav ul li {
     position: absolute;
     top: 10%;
     width: calc(50% - 180px);
-    /* width: 140px;  */
     border-top: 1em solid rgb(255, 168, 212);
 }
 
@@ -141,6 +136,17 @@ header nav ul li {
     padding-bottom: 20px;
 }
 
+.blog-section {
+    background-color: rgba(0, 0, 0, 0.167);
+    border-radius: 10px;
+    box-shadow: 0 0 1px white;
+    /* padding: 40px; */
+    padding-top: 10px;
+    padding-inline: 30px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
 .widget {
     margin-top: 20px;
 }
@@ -148,7 +154,6 @@ header nav ul li {
 header nav ul li a,
 .logo a,
 .sidebar a {
-    /* color: rgb(247, 159, 255); */
     color: rgb(255, 146, 200);
     text-decoration: none;
 }

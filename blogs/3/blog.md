@@ -1,4 +1,3 @@
-const markdownContent = `
 # THIS IS BLOG 3 CONTENT
 
 This is a **Markdown** example with some colored text.
@@ -15,10 +14,3 @@ This is a **Markdown** example with some colored text.
 ### More Markdown Features
 
 You can add more content here and it will be dynamically rendered.
-`;
-
-// Get the output div where the rendered HTML will be displayed
-const markdownOutput = document.getElementById('main-content');
-
-// Render the Markdown content to HTML using marked.parse()
-markdownOutput.innerHTML = marked.parse(markdownContent);
