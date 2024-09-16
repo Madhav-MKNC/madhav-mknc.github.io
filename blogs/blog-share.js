@@ -1,9 +1,9 @@
-const currentUrl = encodeURIComponent(window.location.href);
-const blogTitle = encodeURIComponent(document.title);
-const twitterShareText = `${blogTitle} ${currentUrl} by @5mknc5`;
-const linkedInShareText = `${blogTitle} ${currentUrl} by Madhav Kumar (https://www.linkedin.com/in/madhav-iitd)`;
+function loadShareButtons() {
+    const currentUrl = encodeURIComponent(window.location.href);
+    const blogTitle = encodeURIComponent(document.title);
+    const twitterShareText = `Just read this amazing blog: ${blogTitle} ${currentUrl} by @5mknc5`;
+    const linkedInShareText = `Just read this amazing blog: ${blogTitle} ${currentUrl} by Madhav Kumar (https://www.linkedin.com/in/madhav-iitd)`;
 
-function loadShareButtons () {
     let blogFullDiv = document.getElementById('blog-share');
     if (blogFullDiv) {
         var shareSection = document.createElement('div');

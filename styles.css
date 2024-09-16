@@ -23,9 +23,10 @@ header {
     display: flex;
     align-items: center;
     padding-inline: 30px;
-    background-color: #0b0a1090;
-    border-radius: 10px;
-    border: 1px solid rgb(255, 168, 212);
+    /* background-color: #0b0a1090; */
+    /* border: 1px solid rgb(255, 168, 212); */
+    /* border-radius: 10px; */
+    border-bottom: 1px solid rgb(255, 168, 212);
     margin-top: 20px;
     justify-content: space-between;
 }
