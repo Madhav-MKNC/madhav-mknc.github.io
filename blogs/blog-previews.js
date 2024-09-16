@@ -6,7 +6,8 @@ const blogPosts = [
         author: "Published by Madhav Kumar",
         imageSrc: "blogs/1/thumbnail.png",
         desc: "As technology races ahead, this blog explores both sides of the future — from job automation and privacy concerns to a world where AI solves our biggest challenges. Dive into the possibilities and the uncertainties of what's to come, and discover why the journey itself might be the most captivating part.",
-        link: "https://madhav-mknc.medium.com/are-we-heading-towards-a-dystopian-or-utopian-future-1742faa8af19"
+        // link: "https://madhav-mknc.medium.com/are-we-heading-towards-a-dystopian-or-utopian-future-1742faa8af19"
+        link: "/#blog-1"
     },
     {
         title: "The Future Redefined: Imagine a World Beyond Jobs",

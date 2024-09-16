@@ -100,6 +100,11 @@ header nav ul li {
     height: auto;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .blog-previews .read-more {
     color: #00ffffc3;
     text-decoration: none;
@@ -143,6 +148,47 @@ header nav ul li a:hover,
 .sidebar a:hover {
     color: rgb(0, 110, 255);
     text-shadow: 0 0 4px red;
+}
+
+.social-share-section {
+    text-align: center; 
+    margin-bottom: 40px;
+}
+
+.share-button {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.share-twitter {
+    color: black;
+    border-color: black;
+}
+
+.share-twitter:hover {
+    background-color: black;
+    color: white;
+}
+
+.share-linkedin {
+    color: #0077b5;
+    border-color: #0077b5;
+}
+
+.share-linkedin:hover {
+    background-color: #0077b5;
+    color: white;
 }
 
 /* Responsive Design */

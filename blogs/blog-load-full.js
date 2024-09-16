@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!response.ok) { throw new Error(`Error fetching blog${blogId}.md`); }
             const markdownContent = await response.text();
             contentElement.innerHTML = marked.parse(markdownContent);
+            loadShareButtons();
         } catch (error) {
             contentElement.innerHTML = '<p>Error loading the blog content.</p>';
             console.error('Error loading blog content:', error);
