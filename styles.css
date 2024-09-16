@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 body {
-    margin-inline: 100px;
+    margin-inline: 50px;
     font-family: 'Proto Mono', Arial, sans-serif;
     background: linear-gradient(rgb(24, 11, 21), #0a0a1f);
     color: white;
@@ -193,7 +193,7 @@ header nav ul li a:hover,
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     header {
         padding-inline: 15px;
         text-align: center;
@@ -205,31 +205,56 @@ header nav ul li a:hover,
         margin-top: 10px;
     }
 
-    .sidebar {
-        min-width: 100%;
+    .blog-section {
+        order: 1;
     }
 
-    .sidebar,
     .main-content {
         width: 100%;
+        min-width: 100%;
         margin-inline: 0;
     }
 
-    .profile-img {
+    .sidebar {
+        order: 2;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .left-sidebar-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .profile {
+        margin-top: 30px;
+        text-align: center;
+        min-width: 50%;
+    }
+
+    .about-me {
+        margin-left: 30px;
         width: 50%;
     }
 }
 
-/* Responsive Design */
+/* Responsive Design for smaller devices */
 @media (max-width: 768px) {
     body {
-        margin-inline: 30px;
+        margin-inline: 10px;
     }
 
     header {
         padding-inline: 15px;
-        flex-direction: column;
         text-align: center;
+        font-size: x-small;
+    }
+
+    header nav ul li {
+        font-size: x-large;
+        margin-left: 10px;
+        margin-bottom: 20px;
     }
 
     .container {
@@ -237,8 +262,26 @@ header nav ul li a:hover,
         margin-top: 10px;
     }
 
-    .sidebar,
+    .blog-section {
+        order: 1;
+    }
+
     .main-content {
+        width: 100%;
+        margin-inline: 0;
+    }
+
+    .sidebar {
+        order: 2;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .left-sidebar-section {
+        flex-direction: column;
+    }
+
+    .about-me {
         width: 100%;
         margin-inline: 0;
     }
