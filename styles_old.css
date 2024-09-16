@@ -11,7 +11,7 @@
 body {
     margin-inline: 100px;
     font-family: 'Proto Mono', Arial, sans-serif;
-    background: linear-gradient(rgb(24, 11, 21), #0a0a1f);
+    background: linear-gradient(rgb(24, 12, 22), #0a0a1f);
     color: white;
 }
 
@@ -152,7 +152,7 @@ header nav ul li a:hover,
 }
 
 .social-share-section {
-    text-align: center;
+    text-align: center; 
     margin-bottom: 40px;
 }
 
@@ -193,53 +193,14 @@ header nav ul li a:hover,
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-    header {
-        padding-inline: 15px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
+@media (max-width: 992px) {
     .container {
         flex-direction: column;
-        margin-top: 10px;
-    }
-
-    .sidebar {
-        min-width: 100%;
+        margin-top: 100px;
     }
 
     .sidebar,
     .main-content {
         width: 100%;
-        margin-inline: 0;
-    }
-
-    .profile-img {
-        width: 50%;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        margin-inline: 30px;
-    }
-
-    header {
-        padding-inline: 15px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .container {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    .sidebar,
-    .main-content {
-        width: 100%;
-        margin-inline: 0;
     }
 }
