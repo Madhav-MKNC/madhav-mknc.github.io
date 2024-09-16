@@ -189,20 +189,5 @@
         <script src="blogs/blog-previews.js"></script>
         <script src="blogs/blog-load-full.js" type="module"></script>
         <script src="blogs/blog-share.js"></script>
-        <script>
-            const currentUrl = encodeURIComponent(window.location.href);
-            const blogTitle = encodeURIComponent(document.title);
-            const twitterShareText = `${blogTitle} ${currentUrl} by @5mknc5`;
-            const linkedInShareText = `${blogTitle} ${currentUrl} by Madhav Kumar (https://www.linkedin.com/in/madhav-iitd)`;
-
-            document.getElementById(
-                "twitter-share"
-            ).href = `https://twitter.com/intent/tweet?text=${twitterShareText}`;
-
-            // Set LinkedIn Share URL
-            document.getElementById(
-                "linkedin-share"
-            ).href = `https://www.linkedin.com/sharing/share-offsite/?text=${linkedInShareText}`;
-        </script>
     </body>
 </html>

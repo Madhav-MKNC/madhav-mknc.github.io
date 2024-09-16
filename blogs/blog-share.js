@@ -1,3 +1,8 @@
+const currentUrl = encodeURIComponent(window.location.href);
+const blogTitle = encodeURIComponent(document.title);
+const twitterShareText = `${blogTitle} ${currentUrl} by @5mknc5`;
+const linkedInShareText = `${blogTitle} ${currentUrl} by Madhav Kumar (https://www.linkedin.com/in/madhav-iitd)`;
+
 function loadShareButtons () {
     let blogFullDiv = document.getElementById('blog-share');
     if (blogFullDiv) {
@@ -17,7 +22,7 @@ function loadShareButtons () {
         twitterButton.classList.add('share-button', 'share-twitter');
         twitterButton.setAttribute('title', 'Share on Twitter');
         twitterButton.onclick = function () {
-            window.open('https://twitter.com/share', '_blank');
+            window.open(`https://twitter.com/intent/tweet?text=${twitterShareText}`, '_blank');
             return false;
         };
 
@@ -31,7 +36,7 @@ function loadShareButtons () {
         linkedinButton.classList.add('share-button', 'share-linkedin');
         linkedinButton.setAttribute('title', 'Share on LinkedIn');
         linkedinButton.onclick = function () {
-            window.open('https://www.linkedin.com/shareArticle', '_blank');
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?text=${linkedInShareText}`, '_blank');
             return false;
         };
 
