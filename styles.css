@@ -264,6 +264,8 @@ header nav ul li a:hover,
 
     .blog-section {
         order: 1;
+        padding-top: 1px;
+        padding-inline: 10px;
     }
 
     .main-content {
