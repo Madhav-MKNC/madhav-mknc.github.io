@@ -118,16 +118,23 @@ img {
 }
 
 .blog-section {
-    background-color: rgba(0, 0, 0, 0.167);
+    /* background-color: rgba(0, 0, 0, 0.167);
     border-radius: 10px;
     box-shadow: 0 0 1px white;
     padding-top: 10px;
     padding-inline: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
     margin-top: 20px;
 }
 
 .blog-section .empty-blog-placeholder {
+    /* background: linear-gradient(rgb(225, 9, 175), #04b710); */
+    background: linear-gradient(to bottom right, rgb(255, 0, 217), rgb(0, 255, 213));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+
     text-align: center;
     font-size: 2em;
 }
