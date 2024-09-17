@@ -18,20 +18,20 @@ const blogPosts = [
         // link: "https://madhav-mknc.medium.com/the-future-redefined-imagine-a-world-beyond-jobs-330a42b41c54"
         link: "/#blog-2"
     },
-    {
-        title: "Blog Title 3",
-        date: "Sept 17, 2024",
-        author: "Published by Madhav Kumar",
-        imageSrc: "blogs/3/thumbnail.png",
-        desc: "This is the description for blog post 3.",
-        link: "/#blog-3"
-    },
-    {
-        title: "Blog Title 4",
-        date: "Sept 18, 2024",
-        author: "Published by Madhav Kumar",
-        imageSrc: "blogs/4/thumbnail.png",
-        desc: "This is the description for blog post 4.",
-        link: "#blog-4"
-    }
+    // {
+    //     title: "Blog Title 3",
+    //     date: "Sept 17, 2024",
+    //     author: "Published by Madhav Kumar",
+    //     imageSrc: "blogs/3/thumbnail.png",
+    //     desc: "This is the description for blog post 3.",
+    //     link: "/#blog-3"
+    // },
+    // {
+    //     title: "Blog Title 4",
+    //     date: "Sept 18, 2024",
+    //     author: "Published by Madhav Kumar",
+    //     imageSrc: "blogs/4/thumbnail.png",
+    //     desc: "This is the description for blog post 4.",
+    //     link: "#blog-4"
+    // }
 ];
