@@ -48,7 +48,7 @@ function renderBlogPosts(posts) {
 async function fetchBlogData() {
     const blogsDir = 'blogs';
     let blogPosts = [];
-    for (let i = 1; i <= 100; i++) {
+    for (let i = 1; i <= 20; i++) {
         try {
             let response = await fetch(`${blogsDir}/${i}/meta.json`);
             if (response.ok) {
