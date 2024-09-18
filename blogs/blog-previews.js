@@ -63,7 +63,6 @@ async function fetchBlogData() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    let blogPosts = await fetchBlogData();
-    renderBlogPosts(blogPosts);
+    renderBlogPosts(await fetchBlogData());
 });
 
