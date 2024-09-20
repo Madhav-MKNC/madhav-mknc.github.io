@@ -23,7 +23,7 @@ header {
     display: flex;
     align-items: center;
     padding-inline: 30px;
-    /* background-color: #0b0a1090; */
+    /* background-color: rgba(24, 11, 21, 0.758); */
     /* border: 1px solid rgb(255, 168, 212); */
     /* border-radius: 10px; */
     border-bottom: 1px solid rgb(255, 168, 212);
