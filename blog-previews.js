@@ -37,30 +37,27 @@ function createBlogPost(post) {
     return article;
 }
 
-function renderBlogPosts(posts) {
-    const container = document.getElementById('blog-container');
-    posts.forEach(post => {
-        const blogPostElement = createBlogPost(post);
-        container.appendChild(blogPostElement);
-    });
-}
-
-async function fetchBlogData() {
+async function fetchAndRenderBlogData() {
     const blogsDir = 'blogs';
-    let blogPosts = [];
+    const container = document.getElementById('blog-container');
+
     for (let i = 1; i <= 20; i++) {
         try {
             let response = await fetch(`${blogsDir}/${i}/meta.json`);
             if (response.ok) {
                 let metaData = await response.json();
-                blogPosts.push(metaData);
+                const blogPostElement = createBlogPost(metaData);
+                container.appendChild(blogPostElement);
             }
         } catch (error) {
             console.log(`Blog ${i} not found or error fetching meta.json.`);
         }
     }
-    return blogPosts;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetchAndRenderBlogData();  // Start fetching and rendering posts immediately
+});
 
 document.addEventListener('DOMContentLoaded', async () => {
     renderBlogPosts(await fetchBlogData());

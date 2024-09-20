@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const markdownContent = await response.text();
             document.getElementById('blog-full').innerHTML = marked.parse(markdownContent);
+            loadShareButtons();
         } catch (error) {
             document.getElementById('blog-full').innerHTML = '<p>Error loading the blog content.</p>';
             console.error('Error loading blog content:', error);
