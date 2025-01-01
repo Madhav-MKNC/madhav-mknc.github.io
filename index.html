@@ -26,13 +26,18 @@
         <script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/marked.min.js"></script>
 
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND8K0HX9NS"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-ND8K0HX9NS"
+        ></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-            gtag('config', 'G-ND8K0HX9NS');
+            gtag("config", "G-ND8K0HX9NS");
         </script>
     </head>
     <body>
@@ -41,7 +46,7 @@
                 <a href="/"><h1>Madhav</h1></a>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li>
                         <a
                             href="mailto:madhav.mknc@gmail.com"
@@ -115,6 +120,14 @@
                         </a>
                     </li>
                 </ul>
+
+                <div class="nav-right">
+                    <div class="burger-menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -130,7 +143,11 @@
                     </div>
                     <div class="about-me">
                         <!-- <p style="text-align: center;"><a href="/pages/github-wrapped-2024.html">-> github-wrapped-2024 <-</a></p> -->
-                        <p style="text-align: center;"><a href="https://githubwrapped.xyz/madhav-mknc">-> github-wrapped-2024 <-</a></p>
+                        <p style="text-align: center">
+                            <a href="https://githubwrapped.xyz/madhav-mknc"
+                                >-> github-wrapped-2024 <-</a
+                            >
+                        </p>
                         <h2>Hello, I'm Madhav kumar</h2>
                         <p>
                             I studied Engineering Physics at IIT Delhi, with a
@@ -166,11 +183,11 @@
             </aside>
 
             <main class="main-content" id="main-content">
-                    <div id="blog-container"></div>
+                <div id="blog-container"></div>
             </main>
 
             <aside class="sidebar">
-                <div class="widget">
+                <div class="right-sidebar-section widget">
                     <a
                         class="twitter-timeline"
                         height="750"
@@ -197,6 +214,7 @@
             </aside>
         </div>
 
+        <script src="script.js"></script>
         <script src="blog-previews.js"></script>
     </body>
 </html>
