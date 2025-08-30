@@ -10,7 +10,8 @@
 
 body {
     margin-inline: 50px;
-    font-family: 'Proto Mono', Arial, sans-serif;
+    /* font-family: 'Proto Mono', Arial, sans-serif; */
+    font-family: Lato;
     background: linear-gradient(rgb(24, 11, 21), #0a0a1f);
     color: white;
 }
